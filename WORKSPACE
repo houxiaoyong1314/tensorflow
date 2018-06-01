@@ -22,6 +22,12 @@ check_bazel_version_at_least("0.10.0")
 
 load("//tensorflow:workspace.bzl", "tf_workspace")
 
+new_local_repository(
+    name = "arm_compiler",
+    path = "/media/houxiaoyong/code_disk/gcc-linaro-7.2.1-2017.11-x86_64_aarch64-linux-gnu",
+    build_file = "BUILD.arm_compiler",
+)
+
 # Uncomment and update the paths in these entries to build the Android demo.
 #android_sdk_repository(
 #    name = "androidsdk",
