@@ -293,6 +293,8 @@ cc_library(
         "jdct.h",
         "jinclude.h",
         "jmorecfg.h",
+        "jerror.h",
+        "jpegint.h",
         "jpeglib.h",
         "jsimd.h",
         "jsimddct.h",
